@@ -13,6 +13,15 @@
                 <img class="md:w-[90px]" src="./assets/ico/Moviestack_isotipo.png" alt="">
                 <img class="md:w-[200px]" src="./assets/img/Moviestack_logotipo2.png" alt="">
             </div>
+            
+            <section>
+                <select class="rounded" name="select" id="gene" disabled data-filter="genres">
+                    <option value="todos">Genres</option>
+                </select>
+                <input class="m-2 rounded" type="search" name="search" id="buscador" disabled data-filter="title">
+                
+            </section>
+
             <div class="flex items-center ml-18 p-1">
                 <nav class="border-2 text-white p-[2px] border-neutral-500 rounded-lg shadow">
                     <a class="border text-white p-[2px] border-neutral-500 rounded-lg shadow" href="./index.html">Home</a>
@@ -24,14 +33,9 @@
     </header>
     
     
-    <main class="min-h-screen flex flex-col bg-[#A69281] items-center justify-center" id="main">
+    <main class="min-h-screen flex  flex-wrap bg-[#A69281] items-center justify-center" id="main">
         
-        <div id="checkboxs"></div>
-        <label>
-            <input class="flex w-[150px] border-2 border-gray-800" type="text" id="buscador" placeholder="Buscar películas...">
-            <div id="resultados"></div>
-        </label>
-        <div id="contenedorCards"></div>
+        
     </main>
     
     
@@ -40,8 +44,19 @@
         <p>Dario Mirabal, cohort 54</p>
     </footer>
 
-    <script src="./data.js"></script>
-    <script src="./index.js"></script>
+<template id="MovieCard">
+        <div
+             
+            class="w-60 h-52 w-1/5 p-2 flex flex-col border-solid border-2 m-2 border-gray-400 rounded-lg items-center max-md:w-4/5 bg-[#F2D8C2]"
+            data-attribute="id"
+            >
+            <img class="w-full h-28" data-attribute="image" />
+            <h3 data-attribute="title"></h3>
+            <p class="text-xs line-clamp-4" data-attribute="overview"></p>
+            <a  data-attribute="link">Ver mas</a>
+        </div>
+    </template>
+    <script src="./js/main.mjs" type="module"></script>
 
 </body>
 </html>
