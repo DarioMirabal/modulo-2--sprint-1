@@ -1,0 +1,14 @@
+[data-attribute='like'] svg{
+    fill:none;
+    transition: all 300ms ease-in-out;
+    stroke: black;
+}
+.liked {
+    
+    svg{
+        fill:red;
+        stroke: rgba(0,0,0,0);
+        transition: all 300ms ease-in-out;
+    }
+    
+}

@@ -4,32 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>movies</title>
-      <link href="./css/movies.css" rel="stylesheet" type="text/css">
+      <link href="/css/movies.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header class="bg-[#26221E] h-14 mb-0">
         <div class="flex justify-between h-14">
             <div class="flex">
-                <img class="md:w-[90px]" src="./assets/ico/Moviestack_isotipo.png" alt="">
-                <img class="md:w-[200px]" src="./assets/img/Moviestack_logotipo2.png" alt="">
+                <img class="md:w-[90px]" src="/assets/ico/Moviestack_isotipo.png" alt="">
+                <img class="md:w-[200px]" src="/assets/img/Moviestack_logotipo2.png" alt="">
             </div>
             
-            <section>
-                <select class="rounded" name="select" id="gene" disabled data-filter="genres">
-                    <option value="todos">Genres</option>
-                </select>
-                <input class="m-2 rounded" type="search" name="search" id="buscador" disabled data-filter="title">
-                
-            </section>
-
+            
             <div class="flex items-center ml-18 p-1">
                 <nav class="border-2 text-white p-[2px] border-neutral-500 rounded-lg shadow">
-                    
-                    <a class="border text-white p-[2px] border-neutral-500 rounded-lg shadow" href="/index.html">Home</a>
+                    <a class="border text-white p-[2px] border-neutral-500 rounded-lg shadow" href="/">Home</a>
                     <a class="border  text-white p-[2px] border-neutral-500 rounded-lg shadow" href="/movies/">Movies</a>
-                    <a class="border  text-white p-[2px] border-neutral-500 rounded-lg shadow" href="/favorites/">Favs</a>
-                </nav>
+                    <span class="border  text-white p-[2px] border-neutral-500 rounded-lg shadow" >Favs</span>
                 </nav>
             </div>
         </div>
@@ -66,7 +57,7 @@
         </div>
         </div>
     </template>
-    <script src="./js/main.mjs" type="module"></script>
+    <script src="/js/main.mjs" type="module"></script>
 
 </body>
 </html>
